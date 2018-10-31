@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background: <img src="sf_skyline.jpg">;
+  background: url("../images/sf_skyline.jpg");
   background-size: cover;
   color: #ffffff;
   font-family: Helvetica;
