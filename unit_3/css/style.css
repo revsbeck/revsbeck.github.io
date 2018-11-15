@@ -7,3 +7,36 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
+section {
+	border-radius: 3px;
+	padding-left: 3px;
+}
+
+h2 {
+	text-align: left;
+	border-radius: 3px;
+	padding-left: 5px;
+	font-size: 28px;
+	font-weight: 600;
+	color: white;
+}
+p {
+	text-align: left;
+	border-radius: 3px;
+	padding-left: 5px;
+	font-size: 22px;
+	font-weight: 600;
+	color: white;
+}
+
+div {
+	background-color: lightgreen;
+	}
+
+
+span {
+	font-variant: small-caps;
+	font-family: Tahoma: sans-serif;
+	letter-spacing: .25em;
+	
+}
