@@ -5,6 +5,7 @@
 	<title>Cooper Siepmann Photography</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
 </head>
 
 
@@ -14,17 +15,19 @@
 		<h3>Photography, think globally, act locally</h3>
 		<h3><span>Cooper Siepmann</span> is an accomplished explorer, photographer, and creative director. </h3>
 	</section>
-
-	<div class="grid">
+	<section>
 		<h2>Landscape</h2>
-			<div id="dirt"><img src="images/landscape_1.jpg" alt="Dirt road leading to rolling hills" class="grid-item"></div>
-			<div id="boat"><img src="images/thailand2.jpg" alt="boat in front of large island in thailand"></div>
-			<div id="trees"><img src="images/landscape_2_trees.jpg" alt="Black and white image of trees in the rain"></div>
-			<div id="island"><img src="images/thailand.jpg" alt="Island in thailand"></div>
-			<div id="stars"><img src="images/starysky_with_rock.jpg" alt="star lit sky with rock"></div>
-			<div id="trail"><img src="images/clay_trail.jpg" alt="person hiking on clay trail"></div>
-			<div id="night"><img src="images/stars_trees.jpg" alt="trees with star filled sky"></div>
-			<div id="lake"><img src="images/landscape_3_lake.jpg" alt="Black and white image of lake with mountains in distance"></div>
+		<div class="grid">	
+			<img src="images/landscape_1.jpg" alt="Dirt road leading to rolling hills" class="grid-item">
+			<img src="images/thailand2.jpg" alt="boat in front of large island in thailand" class="grid-item">
+			<img src="images/landscape_2_trees.jpg" alt="Black and white image of trees in the rain" class="grid-item">
+			<img src="images/thailand.jpg" alt="Island in thailand" class="grid-item">
+			<img src="images/starysky_with_rock.jpg" alt="star lit sky with rock" class="grid-item">
+			<img src="images/clay_trail.jpg" alt="person hiking on clay trail" class="grid-item">
+			<img src="images/stars_trees.jpg" alt="trees with star filled sky" class="grid-item">
+			<img src="images/landscape_3_lake.jpg" alt="Black and white image of lake with mountains in distance" class="grid-item">
+		</div>
+	</section>
 
 			<p>Traveling throughout the year to pursue the farthest expanses of Earth, Siepmann works to capture stories that inspire humans to consider their relationship with nature, while promoting the preservation of wild places everywhere. </p>	
 			<div id="boat2"><img src="images/thailand2.jpg" alt="boat in front of large island in thailand"></div>
@@ -36,7 +39,7 @@
 			<div id="desert"><img src="images/car_backcountry.jpg" alt="car driving around the desert"></div>
 			<div id="snow"><img src="images/landscape_snow.jpg" alt="animals trecking up a mountain in the snow in black and white"></div>
 			<div id="sunset"><img src="images/sunset_california.jpg" align="Sunset on hill near ocean with man in background"></div>
-	</div>	
+	
 		<h2>Wildlife</h2>
 			<div id="bird"><img src="images/bird.jpg" alt="colorful bird on branch"></div>
 			<div id="cheetah"><img src="images/cheetah1.jpg"	alt="cheetah in tree"></div>
@@ -68,13 +71,16 @@
 <a href="Cooper.Siepmann@gmail.com">Email</a>
 
 <script>
-$('.grid').masonry({
+var $grid = $('.grid').masonry({
   // set itemSelector so .grid-sizer is not used in layout
   itemSelector: '.grid-item',
   // use element for option
   columnWidth: '.grid-sizer',
   percentPosition: true
-})
+});
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
 </script>
 </body>
 

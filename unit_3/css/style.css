@@ -40,3 +40,7 @@ span {
 	letter-spacing: .25em;
 	
 }
+.grid-sizer,
+.grid-item { width: 33.33%; }
+/* 2 columns */
+.grid-item--width2 { width: 66.66%; }
