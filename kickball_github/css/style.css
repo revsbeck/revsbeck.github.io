@@ -25,7 +25,7 @@ h2 {
 img {
 	display: block;
 	margin: 0 auto;
-	width: 480px;
+	width: auto;
 }
 
 li {
@@ -53,7 +53,7 @@ section {
 
 div {
 	font-size: 1.2em;
-	width: 46%
+	width: 46%;
 	padding: 2%;
 	display: inline-block;
 }
