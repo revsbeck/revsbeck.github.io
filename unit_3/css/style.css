@@ -1,11 +1,10 @@
+* { margin:0; padding:0; box-sizing:border-box; }
 body {
-  text-align: center;
-  background-size: cover;
   background-color: lightblue;
   color: #222;
   font-family: 'Oswald', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 400;
 }
 section {
 	border-radius: 3px;
@@ -22,10 +21,8 @@ h2 {
 }
 p {
 	text-align: left;
-	border-radius: 3px;
-	padding-left: 5px;
-	font-size: 22px;
-	font-weight: 600;
+	font-size: 18px;
+	font-weight: 400;
 	color: white;
 }
 
@@ -40,7 +37,20 @@ span {
 	letter-spacing: .25em;
 	
 }
+#intro {
+	width:25%;position:fixed;top:0
+	left:0;
+}
+.grid { width:75%;float:right; }
 .grid-sizer,
-.grid-item { width: 33.33%; }
+.grid-item { width: 32.33%; margin:.25%; }
+h2.grid-item {
+	padding:4em 0;
+	text-align:center;
+}
+p.grid-item, div.grid-item {
+	padding:2em;
+	background:purple;
+}
 /* 2 columns */
-.grid-item--width2 { width: 66.66%; }
+.grid-item--width2 { width: 65.66%; margin:.5%;}
