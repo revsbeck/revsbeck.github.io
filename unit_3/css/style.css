@@ -1,7 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
-  background-color: lightblue;
-  color: #222;
+  background-color: silver;
+  color: grey;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -27,7 +27,7 @@ p {
 }
 
 div {
-	background-color: lightgreen;
+	background-color: grey;
 	}
 
 
@@ -36,6 +36,10 @@ span {
 	font-family: Tahoma: sans-serif;
 	letter-spacing: .25em;
 	
+}
+
+footer	{
+	float: bottom;
 }
 #intro {
 	width:25%;position:fixed;top:0
