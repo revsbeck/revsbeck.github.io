@@ -9,6 +9,19 @@ body {
 section {
 	border-radius: 3px;
 	padding-left: 3px;
+	display: block;
+
+}
+
+.handle {
+	width: 25%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: white;
+	background: silver;
+	padding: 2em;
+
 
 }
 
