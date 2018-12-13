@@ -14,11 +14,12 @@ section {
 }
 
 .handle {
-	width: 25%;
+	width: 24.5%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	color: white;
+	height: 100%;
 	background: silver;
 	padding: 2em;
 
